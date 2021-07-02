@@ -11,6 +11,8 @@
       <w-button class="ma1" bg-color="primary">primary</w-button>
       <w-button class="ma1" bg-color="secondary">secondary</w-button>
     </w-flex>
+    <vue-qrcode value="Hello, World!" :options="{ width: 200 }"></vue-qrcode>
+
   </div>
 </template>
 
