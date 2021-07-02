@@ -12,3 +12,9 @@ v14.4.0
 ```
 
 ## Run Project
+
+[Write in detail later]
+- Clone the repository
+- cd qr-codr
+- yarn
+- yarn electron:serve
