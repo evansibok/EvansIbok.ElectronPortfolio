@@ -10,7 +10,6 @@
       <w-button class="ma1" bg-color="info">info</w-button>
       <w-button class="ma1" bg-color="primary">primary</w-button>
       <w-button class="ma1" bg-color="secondary">secondary</w-button>
-      <w-button class="ma1" bg-color="purple-light4">purple-light4</w-button>
     </w-flex>
   </div>
 </template>

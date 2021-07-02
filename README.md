@@ -1,24 +1,14 @@
-# sample-electron
+# qr-codr
+### An application to read and display information using qr codes
 
-## Project setup
+## Operating System
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+Windows 10 (x64-based processor)
 ```
 
-### Compiles and minifies for production
+## Node Version
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+v14.4.0
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Run Project
