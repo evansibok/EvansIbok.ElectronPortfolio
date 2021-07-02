@@ -1,5 +1,5 @@
 # qr-codr
-### An application to read and display information using qr codes
+### An application to read and display information using qr codes built using Vue 3 and Electron
 
 ## Operating System
 ```

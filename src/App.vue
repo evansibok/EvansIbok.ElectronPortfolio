@@ -1,6 +1,6 @@
 <template>
   <w-app>
-    <Home name='Evans Ibok' />
+    <Home name='Evans' />
   </w-app>
 </template>
 
