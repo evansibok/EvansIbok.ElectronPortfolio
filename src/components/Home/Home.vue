@@ -2,7 +2,7 @@
   <div class="w-flex">
     <div class="xs6 first-section flex align-center justify-center pt5">
       <h1>User Details</h1>
-      <h4>Hello {{ name }}</h4>
+      <h3 class="mt3">Hello {{ userDetails.firstName }}</h3>
 
       <w-form
         class="user-form justify-center align-center mt10 pa12"
@@ -33,8 +33,13 @@
 <script>
 export default {
   name: "Home",
-  props: {
-    name: String,
+  data: () => {
+    return {
+      userDetails: {
+        firstName: "Sam",
+        lastName: "Ben",
+      },
+    };
   },
 };
 </script>
