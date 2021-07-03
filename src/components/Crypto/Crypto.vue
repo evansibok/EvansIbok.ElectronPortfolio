@@ -2,12 +2,13 @@
   <!-- Crypto Component Template -->
   <div class="xs6 second-section flex align-center justify-center pt5">
     <h1>Crypto</h1>
-    <h4>Hello {{ user.firstName }}</h4>
+    <!-- <h3 class="mt3">Hello {{ user.firstName }}</h3> -->
 
     <div class="w-flex row justify-center align-center mt8">
       <div v-if="state.coinInfo.length === 0" class="mt3 mb3">
         <p>Loading...</p>
       </div>
+      
       <div v-else class="ma5" v-for="coin in state.coinInfo" :key="coin">
         <div class="mt3 mb3">
           <p>
@@ -85,4 +86,7 @@ export default {
 </script>
 
 <style scoped>
+.second-section {
+  background-color: coral;
+}
 </style>
