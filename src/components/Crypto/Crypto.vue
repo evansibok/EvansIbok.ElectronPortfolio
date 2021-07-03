@@ -97,6 +97,6 @@ export default {
 
 <style scoped>
 .second-section {
-  background-color: coral;
+  background-color: #54b946;
 }
 </style>

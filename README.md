@@ -13,8 +13,27 @@ v14.4.0
 
 ## Run Project
 
-[Write in detail later]
-- Clone the repository
-- cd qr-codr
-- yarn
-- yarn electron:serve
+|| Make sure your node version is >=14
+
+### Clone the repository
+```
+git clone https://github.com/evansibok/EvansIbok.ElectronPortfolio.git
+```
+
+```
+cd EvansIbok.ElectronPorfolio
+```
+
+### Install Dependencies
+```
+yarn
+```
+
+### Launch App
+```
+yarn electron:serve
+```
+
+### Built by <a href="https://evansibok.com" target="_blank">Evans Ibok</a>
+
+Thank you 🤩 🔥 🚀 ✨
