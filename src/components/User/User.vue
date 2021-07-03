@@ -34,19 +34,23 @@
     </w-form>
 
     <div v-if="state.qrcode.value.length !== 0">
-      <qrcode-vue :value="state.qrcode.value" :size="state.qrcode.size" level="H" />
+      <qrcode-vue
+        :value="state.qrcode.value"
+        :size="state.qrcode.size"
+        level="H"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import QrcodeVue from 'qrcode.vue'
+import QrcodeVue from "qrcode.vue";
 
 export default {
   name: "User",
   props: {},
   components: {
-    QrcodeVue
+    QrcodeVue,
   },
   data: () => ({
     state: {
@@ -61,7 +65,7 @@ export default {
       },
       qrcode: {
         value: "",
-        size: 150
+        size: 150,
       },
     },
   }),
