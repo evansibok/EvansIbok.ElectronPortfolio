@@ -2,7 +2,7 @@
   <!-- User Details Component Template -->
   <div class="xs6 first-section flex align-center justify-center pt5">
     <h1>User Details</h1>
-    <h3 class="mt3">Hello {{ state.user.firstName }}</h3>
+    <h3 class="mt3">Hello {{ state.user.firstName }} {{ state.user.lastName }}</h3>
 
     <w-form
       class="user-form justify-center align-center mt10 pa12"
@@ -106,7 +106,7 @@ export default {
 
 <style scoped>
 .first-section {
-  background-color: chartreuse;
+  background-color: floralwhite;
 }
 .user-form {
   width: 500px;

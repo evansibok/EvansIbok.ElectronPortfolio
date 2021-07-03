@@ -16,7 +16,7 @@
           <p class="mt3 mb3">
             Price: <b>${{ coin.price }}</b>
           </p>
-          <qrcode-vue :value="coin.price" :size="state.qrcode.size" level="H" class="mt5"/>
+          <qrcode-vue :value="formatCrypto(coin)" :size="state.qrcode.size" level="H" class="mt5"/>
         </div>
       </div>
     </div>
@@ -86,6 +86,12 @@ export default {
       console.log("error", e);
     }
   },
+  methods: {
+    formatCrypto(coin) {
+      const formatted = `Coin: ${coin.name} \nPrice: ${coin.price}`;
+      return formatted
+    }
+  }
 };
 </script>
 
