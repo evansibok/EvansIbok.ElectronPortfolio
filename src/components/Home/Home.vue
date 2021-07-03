@@ -1,27 +1,33 @@
 <template>
+  <div class="w-flex">
+    <!-- Crypto Component -->
+    <User />
+
+    <!-- Crypto Component -->
+    <Crypto />
+  </div>
   <div>
-    <h1>Home</h1>
-    <h4>Hello {{ name }}</h4>
-
-    <w-flex class="wrap">
-      <w-button class="ma1" bg-color="success">success</w-button>
-      <w-button class="ma1" bg-color="error">error</w-button>
-      <w-button class="ma1" bg-color="warning">warning</w-button>
-      <w-button class="ma1" bg-color="info">info</w-button>
-      <w-button class="ma1" bg-color="primary">primary</w-button>
-      <w-button class="ma1" bg-color="secondary">secondary</w-button>
-    </w-flex>
-    <vue-qrcode value="Hello, World!" :options="{ width: 200 }"></vue-qrcode>
-
+    <!-- Evans Ibok's Details -->
+    <MyDetails user="Evans Ibok" />
   </div>
 </template>
 
 <script>
+import Crypto from "../Crypto/Crypto.vue";
+import User from "../User/User.vue";
+import MyDetails from "../MyDetails/MyDetails.vue"
+
 export default {
   name: "Home",
-  props: {
-    name: String,
+  components: {
+    User,
+    Crypto,
+    MyDetails
   },
+  data: () => ({
+    state: {},
+  }),
+  methods: {},
 };
 </script>
 
