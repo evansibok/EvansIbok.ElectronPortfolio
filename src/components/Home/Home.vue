@@ -35,10 +35,7 @@
       </w-form>
 
       <div v-if="state.qrcode.value.length !== 0">
-        <vue-qrcode
-          value="Hello"
-          :options="{ width: 150 }"
-        ></vue-qrcode>
+        <vue-qrcode value="Hello" :options="{ width: 150 }"></vue-qrcode>
       </div>
     </div>
 
@@ -96,7 +93,6 @@ export default {
   }),
   methods: {
     generateCode() {
-      console.log('qrcode value', this.state.qrcode.value.length)
       // Function to generate QR Code for user details
       this.state.loading = true;
 
@@ -107,14 +103,15 @@ export default {
         firstName: this.state.inputValues.firstName,
         lastName: this.state.inputValues.lastName,
       };
-      console.log("user", this.state.user);
 
       // then set qrcode value to user values
-      if(this.state.inputValues.firstName !== '' && this.state.inputValues.lastName !== '') {
+      if (
+        this.state.inputValues.firstName !== "" &&
+        this.state.inputValues.lastName !== ""
+      ) {
         this.state.qrcode[
           "value"
         ] = `${this.state.user.firstName} ${this.state.user.lastName}`;
-        console.log("qrcode", this.state.qrcode);
       }
 
       // Clear form fields
@@ -127,7 +124,6 @@ export default {
     },
   },
   async mounted() {
-    console.log('qrcode value', this.state.qrcode.value.length)
     // try {
     //   const symbols = ["ADA", "BURST", "XTZ"];
 
