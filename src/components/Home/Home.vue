@@ -52,14 +52,19 @@
 
         <div class="w-flex row justify-center align-center mt8">
           <div class="ma5" v-for="coin in state.coinInfo" :key="coin">
-            <p>
-              Coin Name: <b>{{ coin.name }}</b>
-            </p>
-            <p class="mt3 mb3">
-              Price: <b>${{ coin.price }}</b>
-            </p>
+            <div v-if="coin.name === '' || coin.price === ''" class="mt3 mb3">
+              <p>Loading...</p>
+            </div>
 
-            <vue-qrcode value="Hi" :options="{ width: 120 }"></vue-qrcode>
+            <div v-else class="mt3 mb3" >
+              <p>
+                Coin Name: <b>{{ coin.name }}</b>
+              </p>
+              <p class="mt3 mb3">
+                Price: <b>${{ coin.price }}</b>
+              </p>
+              <vue-qrcode value="Hi" :options="{ width: 120 }"></vue-qrcode>
+            </div>
           </div>
         </div>
       </div>
@@ -93,16 +98,16 @@ export default {
         },
         coinInfo: [
           {
-            name: 'Tezos',
-            price: '10'
+            name: '',
+            price: ''
           },
           {
-            name: 'Burst',
-            price: '3'
+            name: '',
+            price: ''
           },
           {
-            name: 'Cardano',
-            price: '0.23'
+            name: '',
+            price: ''
           }
         ],
       },
