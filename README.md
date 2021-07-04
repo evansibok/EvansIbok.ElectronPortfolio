@@ -9,12 +9,12 @@ Windows 10 (x64-based processor)
 
 ## Node Version
 ```
-v14.4.0
+v12.8.1
 ```
 
 ## Run Project
 
-|| Make sure your node version is >=14
+|| Make sure your node version is >=12
 
 || `npm` package manager can be used to install scripts although we strongly recommend you use `yarn` package manager
 
