@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="project mt10 mb5">{{ user }}.ElectronPortfolio</h3>
+    <h3 class="project mt5 mb5">{{ user }}.ElectronPortfolio</h3>
     <h3 class="created mt5 mb5">Created by <span class="user">{{ user }}</span></h3>
     <div class="ma3 mb5">
       <a class="details-link ma5" href="https://github.com/evansibok" target="_blank">GitHub</a>
