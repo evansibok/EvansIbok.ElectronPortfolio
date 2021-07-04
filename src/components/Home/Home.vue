@@ -7,6 +7,13 @@
     <Crypto />
   </div>
   <div>
+    <w-button
+      class="mt5 py4 px5 "
+      bg-color="secondary"
+      @click.prevent="printScreen"
+    >
+      Print Screen
+    </w-button>
     <!-- Evans Ibok's Details -->
     <MyDetails user="Evans Ibok" />
   </div>
@@ -27,7 +34,11 @@ export default {
   data: () => ({
     state: {},
   }),
-  methods: {},
+  methods: {
+    printScreen() {
+      window.print()
+    }
+  },
 };
 </script>
 
